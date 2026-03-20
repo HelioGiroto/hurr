@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>HURR | Heavy Equipment Rental</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@400;700&family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- TopNavBar -->
+    <nav id="navbar">
+        <div class="flex items-center gap-8">
+            <img id="peqLogo" alt="HURR Logo" style="height: 2.5rem; width: auto; object-fit: contain;"
+                src="hurr_logo_letra_branca.png" />
+            <div class="nav-links">
+                <a href="#">About</a>
+                <a href="#">Equipment</a>
+                <a href="#">Pricing</a>
+                <a href="#">How it Works</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div>
+            <button class="btn-quote">Get a Quote</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="container">
+        <div class="hero-bg">
+            <img alt="Heavy machinery in action" src="containers_amarelos.png" />
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="max-w-4xl">
+                <!-- final_spacing_test -->
+                <div class="badge-trusted">
+                    <span class="material-symbols-outlined" style="font-size: 12px;">verified</span> Trusted since 2005
+                </div>
+                <div class="hero-title-wrapper flex-col md-flex-row">
+                    <h1 class="hero-h1 animate-slide-in-left">
+                        CAPTAÇÃO<br /><span class="text-primary">E INTELIGÊNCIA</span><br />NO
+                        MERCADO<br />INTERNACIONAL
+                    </h1>
+                    <div class="hero-logo-container">
+                        <img alt="HURR Logo Detail" class="hero-logo animate-fade-scale"
+                            src="hurr_logo_letra_branca.png" />
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Acesse as mais potentes e estratégicas oportunidades dentro do mercado internacional.
+                    Inteligência, captação estratégica, suporte exclusivo — tudo o que seu projeto precisa.
+                </p>
+                <div class="hero-btns">
+                    <button class="btn-primary">
+                        View Equipment <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </button>
+                    <button class="btn-outline">Get a Quote</button>
+                </div>
+            </div>
+
+            <!-- Hero Stats -->
+            <div id="stats">
+                <div>
+                    <span class="stat-val">18+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div>
+                    <span class="stat-val">350+</span>
+                    <span class="stat-label">Equipment Units</span>
+                </div>
+                <div>
+                    <span class="stat-val">1200+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div>
+                    <span class="stat-val">98+</span>
+                    <span class="stat-label">% Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ticker Bar (Gold) -->
+    <section id="equipment-ticker">
+        <div class="marquee-content">
+            <span>● Excavators</span>
+            <span>● Bulldozers</span>
+            <span>● Tower Cranes</span>
+            <span>● Wheel Loaders</span>
+            <span>● Dump Trucks</span>
+            <span>● Generators</span>
+            <span>● Compactors</span>
+            <span>● Forklifts</span>
+            <span>● Excavators</span>
+            <span>● Bulldozers</span>
+            <span>● Tower Cranes</span>
+            <span>● Wheel Loaders</span>
+        </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section id="why-choose-us">
+        <div class="container text-center">
+            <span class="section-label-gold">Reasons To</span>
+            <h2 class="section-h2">Choose Construction</h2>
+            <p class="section-p">There are many reasons to choose Construction for your next project. Below we will
+                describe the main reasons that make it your best option.</p>
+
+            <div class="card-grid-4">
+                <div class="card-white">
+                    <div class="icon-circle-gold">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">person</span>
+                    </div>
+                    <h4 class="card-title">Trusted by 27K</h4>
+                    <p class="card-text-small">UnityTemplates have more than 27K satisfied customers so far, and still
+                        growing.</p>
+                </div>
+                <!-- ... other cards similarly structured ... -->
+                <div class="card-white">
+                    <div class="icon-circle-gold">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">package</span>
+                    </div>
+                    <h4 class="card-title">Extensions Included</h4>
+                    <p class="card-text-small">We include updated packages of the extensions used in the template.</p>
+                </div>
+                <div class="card-white">
+                    <div class="icon-circle-gold">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">description</span>
+                    </div>
+                    <h4 class="card-title">Documentation</h4>
+                    <p class="card-text-small">Our documentation is detailed, well organized and easy to understand.</p>
+                </div>
+                <div class="card-white">
+                    <div class="icon-circle-gold">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">chat</span>
+                    </div>
+                    <h4 class="card-title">Dedicated Support</h4>
+                    <p class="card-text-small">We answer your queries immediately when they arrive at our inbox.</p>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid-3">
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">inventory_2</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Quickstart Package</h5>
+                        <p class="card-text-small">Create a clone of our demo on your remote or local hosting in
+                            minutes.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">dashboard</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Template Layout Builder</h5>
+                        <p class="card-text-small">Add, remove, edit and configure each module position of your website.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">architecture</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Sp Page Builder</h5>
+                        <p class="card-text-small">The best Drag & Drop and LIVE real-time Page Builder for Joomla.</p>
+                    </div>
+                </div>
+                <!-- Rest of 9 items -->
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">sync_alt</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Headers & Footers</h5>
+                        <p class="card-text-small">One-click header layout change, and editable Footer variations.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">grid_view</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Bootstrap 5</h5>
+                        <p class="card-text-small">We use Bootstrap 5 inside helix Ultimate with HTML5, CSS3.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">movie</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Animations</h5>
+                        <p class="card-text-small">Animate the rows, columns and addons with several effects.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">palette</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Unlimited Colors</h5>
+                        <p class="card-text-small">You can select your colors in the template builder and in page
+                            builder.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">font_download</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Google Fonts</h5>
+                        <p class="card-text-small">Choose your preferred font, from the entire google fonts list.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle-dark">
+                        <span class="material-symbols-outlined">add_circle</span>
+                    </div>
+                    <div>
+                        <h5 class="feature-title">Exclusive Addons</h5>
+                        <p class="card-text-small">Includes more than 7 exclusive Unitytemplates addons.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Stats -->
+    <section id="global-stats">
+        <div class="container global-stats-grid">
+            <div class="global-stat-item">
+                <span class="material-symbols-outlined icon-teal">card_giftcard</span>
+                <span class="stat-h3">125</span>
+                <span class="stat-meta">Gift</span>
+            </div>
+            <div class="global-stat-item">
+                <span class="material-symbols-outlined icon-teal">forum</span>
+                <span class="stat-h3">1000</span>
+                <span class="stat-meta">Comments</span>
+            </div>
+            <div class="global-stat-item">
+                <span class="material-symbols-outlined icon-teal">coffee</span>
+                <span class="stat-h3">350</span>
+                <span class="stat-meta">Coffee Cups</span>
+            </div>
+            <div class="global-stat-item">
+                <span class="material-symbols-outlined icon-teal">download</span>
+                <span class="stat-h3">600</span>
+                <span class="stat-meta">Downloads</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Section -->
+    <section id="engineering-process">
+        <div class="engineering-bg">
+            <img alt="Engineers on site"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgdoDV_Y7PJTG7-qqELAjFhDvNWr1xMMI1Y3UAufZQOEBFDG9vhcCdKzuoRX-4z-iamEB-4tUltdWKqlEYRzNdRg-ky_K8r4A9zmmuTrkKCitZsuGB5eLBn7clrcz53z9WhkWLgcNJpGqxbZBkn3F0OReAo4K3AO_b1o-Q4mw-07AsGGOWEyCXeJxBpcsgpPhUZ2caybG54GtK3V3jX_sxTEGvAXXy7g-f8w_bSzv_I18QCi2t-sSSGZG8iyxlY38cWyeLN2nMQ" />
+        </div>
+        <div class="container engineering-content">
+            <div>
+                <span class="section-label-gold">Our Steps</span>
+                <h2 class="section-h2" style="color: white;">Engineering & Manufacturing<br />Construction Process</h2>
+                <button class="btn-develop">
+                    <span class="material-symbols-outlined" style="font-size: 14px;">mail</span> Develop with us
+                </button>
+            </div>
+            <div class="steps-list">
+                <div class="step-card">
+                    <h4 class="step-h4">Design and Analysis</h4>
+                </div>
+                <div class="step-card inactive">
+                    <h4 class="step-h4">Parts and Preparation</h4>
+                </div>
+                <div class="step-card inactive">
+                    <h4 class="step-h4">Assembly</h4>
+                </div>
+                <div class="step-card inactive">
+                    <h4 class="step-h4">Trial and Inspection</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Banner (Info Center) -->
+    <section id="info-center">
+        <div class="container">
+            <h2>Information Center</h2>
+            <p>What you need to know about the 2019-2021 flu season.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="get-started-cta">
+        <div class="cta-bg">
+            <img alt="Machinery fleet"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MXiglqbSDnEcUPJRUAgp6mfQy6eamv9tS-rxOPIrbNB-b7dKFJqrRlUgpEsWH4JzdbU19WDH1ZWQZxG6vjDIo9dQ_Ud0FMOQ0jbVP2bdG2xeNyDLEiH3LmiXReupwt3JhbIMvk4nF0k6MEnwf35k09dVwam3OH2XszS6zQB8MRWTmsX8U9bcoIaaKeWVcmyibbl3kJH6QFrZC16U-yzqHxNKf2sEL2ql7OARwmmdzt8A0ZYLnD0q3Xw09t6nik-UEBoUl0h-2A" />
+        </div>
+        <div class="cta-content container">
+            <span class="cta-label">Ready to move ground?</span>
+            <h2 class="cta-h2" style="color: white;">Need Reliable Machinery for your <span
+                    style="color: var(--gold);">Next Project?</span></h2>
+            <p class="cta-p">Contact our team today and get matched with the right equipment, at the right price, on
+                time — every time.</p>
+            <button class="btn-cta">
+                Request a Rental Today <span class="material-symbols-outlined">arrow_right_alt</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Social Responsibility -->
+    <section id="social-responsibility">
+        <div class="container">
+            <h2 class="section-h2 text-center" style="color: white; letter-spacing: 0.2em;">Social Responsibility</h2>
+            <div class="responsibility-grid">
+                <p>We have been working with the loadings for more than 10 years, so we are fully responsible about this
+                    process. Believe, that you our logistic company will transport the goods absolutely safely.</p>
+                <p>you will never regret the cooperation with our team. The professional team of our employees is always
+                    ready to give a helping hand and provide you with the wonderful services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Plans -->
+    <section id="future-plans">
+        <div class="future-bg">
+            <img alt="Cityscape skyscrapers" src="edificio_imponente.png" />
+        </div>
+        <div class="future-content container">
+            <h2 class="future-h2" style="color: white;">We Build the Future</h2>
+            <p class="future-italic">Best Ideas – Best Solution – Best Result</p>
+            <button class="btn-outline" style="color: black; background: var(--gold); border: none;">View More</button>
+        </div>
+    </section>
+
+    <!-- Copyright notice -->
+    <section id="copyright-notice">
+        <div class="container">
+            © 2024 HURR Heavy Equipment Rental. All right reserved
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-newsletter">
+                <h3 class="footer-h3">Social Media Discounts</h3>
+                <p class="footer-p-faded">Find our new special offers and discounts across our social platforms!</p>
+                <div class="social-icons-footer text-primary" style="font-size: 24px;">
+                    <span class="material-symbols-outlined icon-faded-hover">facebook</span>
+                    <span class="material-symbols-outlined icon-faded-hover">public</span>
+                    <span class="material-symbols-outlined icon-faded-hover">movie</span>
+                </div>
+                <div class="divider-small"></div>
+                <h3 class="footer-h3">Subscribe To Our Newsletter</h3>
+                <form class="newsletter-form">
+                    <input class="newsletter-input" placeholder="Enter your email" type="email" />
+                    <button class="btn-send">
+                        <span class="material-symbols-outlined" style="font-size: 14px;">send</span> Get!
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-grid-4">
+                <div>
+                    <h4 class="footer-col-h4">
+                        <div class="footer-gold-line"></div> About Construction
+                    </h4>
+                    <p class="footer-text-tiny">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                        adipiscing erat eget risus sollicitudin pellentesque.</p>
+                    <div class="open-hours-item">
+                        <span class="material-symbols-outlined"
+                            style="color: var(--gold); font-size: 18px;">schedule</span>
+                        <div>
+                            <span class="open-hours-label">Open Hours</span>
+                            <span class="open-hours-val">Mon - Sat 08:00 to 19:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-col-h4">
+                        <div class="footer-gold-line"></div> Our Company
+                    </h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Our Main Services</a></li>
+                        <li><a href="#">Our Project Gallery</a></li>
+                        <li><a href="#">News And Guides</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-h4">
+                        <div class="footer-gold-line"></div> Peruvian Offices
+                    </h4>
+                    <ul class="contact-info-list font-bold">
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined" style="color: var(--gold);">location_on</span>
+                            Tupac Amaru 200 - Lima - Peru
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined" style="color: var(--gold);">call</span>
+                            Office: +515574657
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-h4">
+                        <div class="footer-gold-line"></div> Our Branches
+                    </h4>
+                    <img alt="World Map" class="world-map-img" src="hurr_logo_letra_branca.png" />
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <span>© 2024 Your Company - By Unitytemplates</span>
+                <div class="bottom-socials">
+                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">facebook</span>
+                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">movie</span>
+                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">camera_alt</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
