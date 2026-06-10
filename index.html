@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>HURR | Heavy Equipment Rental</title>
-    <!-- Fonts -->
+    <title>HURR BRASIL | Captação e Inteligência no Mercado Internacional</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@400;700&family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap"
         rel="stylesheet" />
-    <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- TopNavBar -->
     <nav id="navbar">
         <div class="flex items-center gap-8">
-            <img id="peqLogo" alt="HURR Logo" style="height: 2.5rem; width: auto; object-fit: contain;"
-                src="hurr_logo_letra_branca.png" />
-            <div class="nav-links">
-                <a href="#">About</a>
-                <a href="#">Equipment</a>
-                <a href="#">Pricing</a>
-                <a href="#">How it Works</a>
-                <a href="#">Contact</a>
+            <img id="peqLogo" alt="HURR Logo" class="logo-nav"
+                src="imagens/hurr_logo_letra_branca.png" />
+            <div class="nav-links" id="navLinks">
+                <a href="#why-choose-us">Quem Somos</a>
+                <a href="#why-choose-us">Soluções</a>
+                <a href="#engineering-process">Perfil do Importador</a>
+                <a href="#contact-form">Contato</a>
             </div>
         </div>
-        <div>
-            <button class="btn-quote">Get a Quote</button>
+        <div class="nav-right">
+            <a href="#contact-form" class="btn-quote">Agendar Consulta</a>
+            <button id="menuToggle" class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <button id="menuClose" class="menu-close" aria-label="Fechar menu">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#why-choose-us">Quem Somos</a>
+                <a href="#why-choose-us">Soluções</a>
+                <a href="#engineering-process">Perfil do Importador</a>
+                <a href="#contact-form">Contato</a>
+                <a href="#contact-form" class="btn-quote mobile-cta">Agendar Consulta</a>
+            </nav>
+        </div>
+    </div>
+
     <header id="hero" class="container">
         <div class="hero-bg">
-            <img alt="Heavy machinery in action" src="containers_amarelos.png" />
+            <img alt="Heavy machinery in action" src="imagens/containers_amarelos.png" />
             <div class="hero-gradient"></div>
         </div>
         <div class="hero-content">
             <div class="max-w-4xl">
-                <!-- final_spacing_test -->
                 <div class="badge-trusted">
-                    <span class="material-symbols-outlined" style="font-size: 12px;">verified</span> Trusted since 2005
+                    <span class="material-symbols-outlined" style="font-size: 12px;">verified</span> Confiança desde 2005
                 </div>
                 <div class="hero-title-wrapper flex-col md-flex-row">
                     <h1 class="hero-h1 animate-slide-in-left">
@@ -54,388 +67,510 @@
                     </h1>
                     <div class="hero-logo-container">
                         <img alt="HURR Logo Detail" class="hero-logo animate-fade-scale"
-                            src="hurr_logo_letra_branca.png" />
+                            src="imagens/hurr_logo_letra_branca.png" />
                     </div>
                 </div>
                 <p class="hero-description">
-                    Acesse as mais potentes e estratégicas oportunidades dentro do mercado internacional.
+                    Acesse as mais promissoras estratégicas e oportunidades dentro do mercado internacional.
                     Inteligência, captação estratégica, suporte exclusivo — tudo o que seu projeto precisa.
                 </p>
                 <div class="hero-btns">
-                    <button class="btn-primary">
-                        View Equipment <span class="material-symbols-outlined">arrow_right_alt</span>
-                    </button>
-                    <button class="btn-outline">Get a Quote</button>
+                    <a href="#contact-form" class="btn-primary">Fale com o Consultor <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                    <a href="#get-started-cta" class="btn-outline">Avalie seu Potencial</a>
                 </div>
             </div>
 
-            <!-- Hero Stats -->
             <div id="stats">
                 <div>
-                    <span class="stat-val">18+</span>
-                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-val">21+</span>
+                    <span class="stat-label">Anos de Experiência</span>
                 </div>
                 <div>
-                    <span class="stat-val">350+</span>
-                    <span class="stat-label">Equipment Units</span>
+                    <span class="stat-val">150+</span>
+                    <span class="stat-label">Consultores</span>
                 </div>
                 <div>
-                    <span class="stat-val">1200+</span>
-                    <span class="stat-label">Happy Clients</span>
+                    <span class="stat-val">1740+</span>
+                    <span class="stat-label">Fornecedores Globais</span>
                 </div>
                 <div>
                     <span class="stat-val">98+</span>
-                    <span class="stat-label">% Satisfaction</span>
+                    <span class="stat-label">% Satisfação</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Ticker Bar (Gold) -->
     <section id="equipment-ticker">
         <div class="marquee-content">
-            <span>● Excavators</span>
-            <span>● Bulldozers</span>
-            <span>● Tower Cranes</span>
-            <span>● Wheel Loaders</span>
-            <span>● Dump Trucks</span>
-            <span>● Generators</span>
-            <span>● Compactors</span>
-            <span>● Forklifts</span>
-            <span>● Excavators</span>
-            <span>● Bulldozers</span>
-            <span>● Tower Cranes</span>
-            <span>● Wheel Loaders</span>
+            <span>● EXPANSÃO GLOBAL</span>
+            <span>● INTELIGÊNCIA COMERCIAL</span>
+            <span>● CAPTAÇÃO DE COMPRADORES</span>
+            <span>● LOGÍSTICA INTERNACIONAL</span>
+            <span>● CONSULTORIA ADUANEIRA</span>
+            <span>● MERCADOS INTERNACIONAIS</span>
+            <span>● EXPORTAÇÃO BRASILEIRA</span>
+            <span>● COMPLIANCE DOCUMENTAL</span>
+            <span>● SEGURANÇA E PREVISIBILIDADE</span>
+            <span>● EXPANSÃO GLOBAL</span>
+            <span>● INTELIGÊNCIA COMERCIAL</span>
+            <span>● CAPTAÇÃO DE COMPRADORES</span>
         </div>
     </section>
 
-    <!-- Reasons Section -->
     <section id="why-choose-us">
         <div class="container text-center">
-            <span class="section-label-gold">Reasons To</span>
-            <h2 class="section-h2">Choose Construction</h2>
-            <p class="section-p">There are many reasons to choose Construction for your next project. Below we will
-                describe the main reasons that make it your best option.</p>
+            <span class="section-label-gold">Propósito Institucional</span>
+            <h2 class="section-h2 section-h2--italic">"A globalização não é apenas um destino, é uma disciplina estratégica."</h2>
+            <p class="section-p section-p--lg">Na HURR BRASIL, atuamos na intersecção entre o potencial de escala de empresas nacionais e as demandas de mercados globais. Nosso papel é mitigar as barreiras de entrada, mapear canais de distribuição eficientes e estruturar operações de exportação robustas, transformando o mercado internacional em uma linha de receita sólida e sustentável para o seu negócio.</p>
 
-            <div class="card-grid-4">
-                <div class="card-white">
-                    <div class="icon-circle-gold">
-                        <span class="material-symbols-outlined" style="font-size: 30px;">person</span>
-                    </div>
-                    <h4 class="card-title">Trusted by 27K</h4>
-                    <p class="card-text-small">UnityTemplates have more than 27K satisfied customers so far, and still
-                        growing.</p>
-                </div>
-                <!-- ... other cards similarly structured ... -->
-                <div class="card-white">
-                    <div class="icon-circle-gold">
-                        <span class="material-symbols-outlined" style="font-size: 30px;">package</span>
-                    </div>
-                    <h4 class="card-title">Extensions Included</h4>
-                    <p class="card-text-small">We include updated packages of the extensions used in the template.</p>
-                </div>
-                <div class="card-white">
-                    <div class="icon-circle-gold">
-                        <span class="material-symbols-outlined" style="font-size: 30px;">description</span>
-                    </div>
-                    <h4 class="card-title">Documentation</h4>
-                    <p class="card-text-small">Our documentation is detailed, well organized and easy to understand.</p>
-                </div>
-                <div class="card-white">
-                    <div class="icon-circle-gold">
-                        <span class="material-symbols-outlined" style="font-size: 30px;">chat</span>
-                    </div>
-                    <h4 class="card-title">Dedicated Support</h4>
-                    <p class="card-text-small">We answer your queries immediately when they arrive at our inbox.</p>
-                </div>
-            </div>
-
-            <!-- Features Grid -->
             <div class="features-grid-3">
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">inventory_2</span>
+                <div class="feature-item feature-item--card">
+                    <div class="icon-circle-dark icon-circle-dark--lg">
+                        <span class="material-symbols-outlined" style="font-size: 32px;">analytics</span>
                     </div>
                     <div>
-                        <h5 class="feature-title">Quickstart Package</h5>
-                        <p class="card-text-small">Create a clone of our demo on your remote or local hosting in
-                            minutes.</p>
+                        <h5 class="feature-title">Inteligência Comercial Internacional</h5>
+                        <p class="card-text-small">Mapeamento alfandegário, análise de concorrência global e identificação de mercados-alvo com maior fit de preço e demanda. Reduzimos a incerteza antes do primeiro embarque.</p>
                     </div>
                 </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">dashboard</span>
+                <div class="feature-item feature-item--card">
+                    <div class="icon-circle-dark icon-circle-dark--lg">
+                        <span class="material-symbols-outlined" style="font-size: 32px;">handshake</span>
                     </div>
                     <div>
-                        <h5 class="feature-title">Template Layout Builder</h5>
-                        <p class="card-text-small">Add, remove, edit and configure each module position of your website.
-                        </p>
+                        <h5 class="feature-title">Captação e Prospecção de Compradores</h5>
+                        <p class="card-text-small">Desenvolvimento de canais de distribuição e identificação de parceiros comerciais, importadores e grandes players nos mercados de destino. Conectamos seu produto a quem realmente tem poder de compra.</p>
                     </div>
                 </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">architecture</span>
+                <div class="feature-item feature-item--card">
+                    <div class="icon-circle-dark icon-circle-dark--lg">
+                        <span class="material-symbols-outlined" style="font-size: 32px;">fact_check</span>
                     </div>
                     <div>
-                        <h5 class="feature-title">Sp Page Builder</h5>
-                        <p class="card-text-small">The best Drag & Drop and LIVE real-time Page Builder for Joomla.</p>
-                    </div>
-                </div>
-                <!-- Rest of 9 items -->
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">sync_alt</span>
-                    </div>
-                    <div>
-                        <h5 class="feature-title">Headers & Footers</h5>
-                        <p class="card-text-small">One-click header layout change, and editable Footer variations.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">grid_view</span>
-                    </div>
-                    <div>
-                        <h5 class="feature-title">Bootstrap 5</h5>
-                        <p class="card-text-small">We use Bootstrap 5 inside helix Ultimate with HTML5, CSS3.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">movie</span>
-                    </div>
-                    <div>
-                        <h5 class="feature-title">Animations</h5>
-                        <p class="card-text-small">Animate the rows, columns and addons with several effects.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">palette</span>
-                    </div>
-                    <div>
-                        <h5 class="feature-title">Unlimited Colors</h5>
-                        <p class="card-text-small">You can select your colors in the template builder and in page
-                            builder.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">font_download</span>
-                    </div>
-                    <div>
-                        <h5 class="feature-title">Google Fonts</h5>
-                        <p class="card-text-small">Choose your preferred font, from the entire google fonts list.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon-circle-dark">
-                        <span class="material-symbols-outlined">add_circle</span>
-                    </div>
-                    <div>
-                        <h5 class="feature-title">Exclusive Addons</h5>
-                        <p class="card-text-small">Includes more than 7 exclusive Unitytemplates addons.</p>
+                        <h5 class="feature-title">Suporte Operacional e Regulatório</h5>
+                        <p class="card-text-small">Acompanhamento consultivo na estruturação da cadeia logística internacional, barreiras técnicas, conformidade documental e estratégias de compliance cambial.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Global Stats -->
-    <section id="global-stats">
-        <div class="container global-stats-grid">
-            <div class="global-stat-item">
-                <span class="material-symbols-outlined icon-teal">card_giftcard</span>
-                <span class="stat-h3">125</span>
-                <span class="stat-meta">Gift</span>
-            </div>
-            <div class="global-stat-item">
-                <span class="material-symbols-outlined icon-teal">forum</span>
-                <span class="stat-h3">1000</span>
-                <span class="stat-meta">Comments</span>
-            </div>
-            <div class="global-stat-item">
-                <span class="material-symbols-outlined icon-teal">coffee</span>
-                <span class="stat-h3">350</span>
-                <span class="stat-meta">Coffee Cups</span>
-            </div>
-            <div class="global-stat-item">
-                <span class="material-symbols-outlined icon-teal">download</span>
-                <span class="stat-h3">600</span>
-                <span class="stat-meta">Downloads</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Engineering Section -->
     <section id="engineering-process">
         <div class="engineering-bg">
-            <img alt="Engineers on site" src="aperto_de_maos.png" />
+            <img alt="Parceria Comercial" src="imagens/aperto_de_maos.png" />
         </div>
         <div class="container engineering-content">
             <div>
-                <span class="section-label-gold">Our Steps</span>
-                <h2 class="section-h2" style="color: white;">Engineering & Manufacturing<br />Construction Process</h2>
-                <button class="btn-develop">
-                    <span class="material-symbols-outlined" style="font-size: 14px;">mail</span> Develop with us
-                </button>
+                <span class="section-label-gold">Maturidade Comercial Externa</span>
+                <h2 class="section-h2 section-h2--light">O Perfil do<br />Importador</h2>
+                <p class="engineering-description">Nossas soluções são desenhadas para organizações que buscam expandir seu posicionamento de mercado e estabelecer presença sólida no mercado nacional com os produtos que mais se destacam no cenário global:</p>
+                <a href="#get-started-cta" class="btn-develop">
+                    <span class="material-symbols-outlined" style="font-size: 16px;">rocket_launch</span> Avaliar Meu Potencial
+                </a>
             </div>
             <div class="steps-list">
                 <div class="step-card">
-                    <h4 class="step-h4">Design and Analysis</h4>
+                    <h4 class="step-h4">Indústrias e Produtores</h4>
+                    <p class="step-p">Que operam com excedente de capacidade e buscam diversificar receita em moedas fortes.</p>
                 </div>
-                <div class="step-card inactive">
-                    <h4 class="step-h4">Parts and Preparation</h4>
+                <div class="step-card">
+                    <h4 class="step-h4">Marcas Consolidadas</h4>
+                    <p class="step-p">Que desejam expandir seu posicionamento de mercado e estabelecer presença física ou digital no exterior.</p>
                 </div>
-                <div class="step-card inactive">
-                    <h4 class="step-h4">Assembly</h4>
-                </div>
-                <div class="step-card inactive">
-                    <h4 class="step-h4">Trial and Inspection</h4>
+                <div class="step-card">
+                    <h4 class="step-h4">Distribuidores Nacionais</h4>
+                    <p class="step-p">Prontos para escalar suas operações para o ecossistema global.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mid Banner (Info Center) -->
-    <section id="info-center">
-        <div class="container">
-            <h2>Information Center</h2>
-            <p>What you need to know about the 2019-2021 flu season.</p>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="get-started-cta">
-        <div class="cta-bg">
-            <img alt="Machinery fleet" src="equipe_corporativa.png" />
-        </div>
-        <div class="cta-content container">
-            <span class="cta-label">Ready to move ground?</span>
-            <h2 class="cta-h2" style="color: white;">Need Reliable Machinery for your <span
-                    style="color: var(--gold);">Next Project?</span></h2>
-            <p class="cta-p">Contact our team today and get matched with the right equipment, at the right price, on
-                time — every time.</p>
-            <button class="btn-cta">
-                Request a Rental Today <span class="material-symbols-outlined">arrow_right_alt</span>
-            </button>
-        </div>
-    </section>
-
-    <!-- Social Responsibility -->
     <section id="social-responsibility">
         <div class="container">
-            <h2 class="section-h2 text-center" style="color: white; letter-spacing: 0.2em;">Social Responsibility</h2>
+            <h2 class="section-h2 section-h2--light section-h2--center">Robustez Operacional & Compliance</h2>
             <div class="responsibility-grid">
-                <p>We have been working with the loadings for more than 10 years, so we are fully responsible about this
-                    process. Believe, that you our logistic company will transport the goods absolutely safely.</p>
-                <p>you will never regret the cooperation with our team. The professional team of our employees is always
-                    ready to give a helping hand and provide you with the wonderful services.</p>
+                <p class="responsibility-text">No comércio internacional, a confiança é o ativo mais valioso. A HURR BRASIL atua sob rígidos padrões de conformidade aduaneira e compliance cambial, mitigando riscos operacionais e garantindo total segurança jurídica para as transações de exportação da sua empresa.</p>
+                <p class="responsibility-text">Nossa estrutura e conexões globais nos permitem desenhar fluxos logísticos eficientes e integrados. Simplificamos as barreiras burocráticas e técnicas para que sua marca chegue ao exterior com a mesma solidez que possui no mercado interno.</p>
             </div>
         </div>
     </section>
 
-    <!-- Future Plans -->
-    <section id="future-plans">
-        <div class="future-bg">
-            <img alt="Cityscape skyscrapers" src="edificio_imponente.png" />
+    <section id="get-started-cta">
+        <div class="cta-bg">
+            <img alt="Equipe Corporativa" src="imagens/equipe_corporativa.png" />
         </div>
-        <div class="future-content container">
-            <h2 class="future-h2" style="color: white;">We Build the Future</h2>
-            <p class="future-italic">Best Ideas – Best Solution – Best Result</p>
-            <button class="btn-outline" style="color: black; background: var(--gold); border: none;">View More</button>
+        <div class="cta-content container">
+            <span class="cta-label">Pronto para o mercado global?</span>
+            <h2 class="cta-h2">Prepare sua operação para <span class="cta-h2--gold">atender todo o mercado nacional</span></h2>
+            <p class="cta-p">A nacionalização exige planejamento rigoroso e conexões certas. Fale com um de nossos consultores e avalie o potencial de importação do seu projeto e as projeções para o mercado nacional.</p>
+            <button class="btn-cta" id="openDiagnosticBtn">Diagnóstico de Potencial do Seu Produto <span class="material-symbols-outlined">arrow_right_alt</span></button>
         </div>
     </section>
 
-    <!-- Copyright notice -->
+    <section id="testimonials">
+        <div class="container">
+            <span class="section-label-gold section-label-gold--centered">Casos de Sucesso</span>
+            <h2 class="section-h2 section-h2--light section-h2--center">Resultados que Falam por Si</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <div class="icon-circle-dark icon-circle-dark--lg">
+                            <span class="material-symbols-outlined testimonial-quote-icon">format_quote</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">A HURR BRASIL estruturou toda a nossa operação de importação de equipamentos industriais chineses. Reduzimos custos em 32% e encurtamos prazos de entrega em 18 dias com a consultoria logística e o compliance aduaneiro.</p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-author-name">Impactus Logística e Comércio Exterior</span>
+                        <span class="testimonial-author-role">Indústria de Máquinas e Equipamentos • São Paulo, SP</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <div class="icon-circle-dark icon-circle-dark--lg">
+                            <span class="material-symbols-outlined testimonial-quote-icon">format_quote</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Com a captação de fornecedores globais feita pela HURR, passamos de 3 para 12 parceiros internacionais em menos de 8 meses. A inteligência de mercado nos deu visibilidade para negociar com os maiores players mundiais.</p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-author-name">Romanelli Suprimentos Estratégicos</span>
+                        <span class="testimonial-author-role">Distribuidora de Insumos Químicos • Rio de Janeiro, RJ</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <div class="icon-circle-dark icon-circle-dark--lg">
+                            <span class="material-symbols-outlined testimonial-quote-icon">format_quote</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">O suporte documental e regulatório da HURR BRASIL foi determinante para a nacionalização dos nossos primeiros contêineres. Hoje temos um fluxo de importação previsível e seguro, com total conformidade cambial.</p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-author-name">Wonderlife Operações Internacionais</span>
+                        <span class="testimonial-author-role">Varejo de Eletrônicos • Belo Horizonte, MG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="future-plans">
+        <div class="future-bg"></div>
+        <div class="future-content container">
+            <h2 class="future-h2">Expansão Global Sustentável</h2>
+            <p class="future-italic">Inteligência de Mercado e Conexões Estratégicas para o Importador Brasileiro</p>
+            <div class="social-icons-footer future-social-icons">
+                <span class="material-symbols-outlined icon-faded-hover">groups</span>
+                <span class="material-symbols-outlined icon-faded-hover">public</span>
+                <span class="material-symbols-outlined icon-faded-hover">hub</span>
+                <span class="material-symbols-outlined icon-faded-hover">directions_boat</span>
+                <span class="material-symbols-outlined icon-faded-hover">delivery_truck_bolt</span>
+                <span class="material-symbols-outlined icon-faded-hover">inventory</span>
+            </div>
+            <a href="#contact-form" class="btn-outline btn-outline--gold">Fale com um Consultor</a>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <div class="contact-form-inner">
+                <span class="section-label-gold section-label-gold--centered">Contato</span>
+                <h2 class="contact-h2">Entre em Contato</h2>
+                <p class="contact-subtitle">Deixe-nos saber de seu interesse ou necessidade de explorar as mais modernas ferramentas e estratégias de importação, os principais fornecedores globais e todo o potencial que um projeto em parceria conosco pode ser alcançado.</p>
+                <form class="contact-form-fields" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="070a9c66-b1a6-427b-ae47-8314ca759a17" />
+                    <input type="hidden" name="subject" value="Novo contato-lead - SITE HURR" />
+                    <input type="hidden" name="from_name" value="HURR BRASIL - Novo Contato-Lead" />
+                    <div class="contact-input-group">
+                        <input type="text" name="nome" class="contact-input" placeholder="Nome" required />
+                    </div>
+                    <div class="contact-input-group">
+                        <input type="email" name="email" class="contact-input" placeholder="Email (opcional)" />
+                    </div>
+                    <div class="contact-input-group">
+                        <input type="tel" name="telefone" class="contact-input" placeholder="Telefone" required />
+                    </div>
+                    <div id="formSuccess" class="form-success" style="display:none;">
+                        <span class="material-symbols-outlined" style="font-size: 2rem; color: var(--gold);">check_circle</span>
+                        <p>Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
+                    </div>
+                    <button type="submit" id="formSubmitBtn" class="btn-cta contact-submit">ENVIAR <span class="material-symbols-outlined">send</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section id="copyright-notice">
         <div class="container">
-            © 2024 HURR Heavy Equipment Rental. All right reserved
+            © 2026 HURR BRASIL. Todos os direitos reservados.
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="main-footer">
         <div class="container">
             <div class="footer-newsletter">
-                <h3 class="footer-h3">Social Media Discounts</h3>
-                <p class="footer-p-faded">Find our new special offers and discounts across our social platforms!</p>
-                <div class="social-icons-footer text-primary" style="font-size: 24px;">
-                    <span class="material-symbols-outlined icon-faded-hover">facebook</span>
-                    <span class="material-symbols-outlined icon-faded-hover">public</span>
-                    <span class="material-symbols-outlined icon-faded-hover">movie</span>
-                </div>
                 <div class="divider-small"></div>
-                <h3 class="footer-h3">Subscribe To Our Newsletter</h3>
-                <form class="newsletter-form">
-                    <input class="newsletter-input" placeholder="Enter your email" type="email" />
-                    <button class="btn-send">
-                        <span class="material-symbols-outlined" style="font-size: 14px;">send</span> Get!
-                    </button>
-                </form>
+                <span class="section-label-gold section-label-gold--centered">Newsletter</span>
+                <h3 class="footer-h3">Assine Nossa Newsletter</h3>
+                <p class="footer-p-faded">Acompanhe nossas análises de mercado e oportunidades do comércio exterior.</p>
+                <div class="newsletter-wrap">
+                    <form class="newsletter-form" id="newsletterForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c21bb6fb-68c1-4b22-9612-ef7f313466fb" />
+                        <input type="hidden" name="subject" value="Novo inscrito Newsletter - SITE HURR" />
+                        <input type="hidden" name="from_name" value="HURR BRASIL - Pedido de Newsletter" />
+                        <input type="email" name="email" class="newsletter-input" placeholder="Seu e-mail corporativo" required />
+                        <button type="submit" id="newsletterSubmitBtn" class="btn-send">
+                            <span class="material-symbols-outlined" style="font-size: 14px;">send</span> Enviar
+                        </button>
+                    </form>
+                    <div id="newsletterSuccess" class="newsletter-success" style="display:none;">
+                        <span class="material-symbols-outlined" style="font-size: 1.25rem; color: var(--gold);">check_circle</span>
+                        <span>Inscrição confirmada!</span>
+                    </div>
+                </div>
             </div>
 
             <div class="footer-grid-4">
                 <div>
                     <h4 class="footer-col-h4">
-                        <div class="footer-gold-line"></div> About Construction
+                        <div class="footer-gold-line"></div> Sobre a HURR BRASIL
                     </h4>
-                    <p class="footer-text-tiny">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                        adipiscing erat eget risus sollicitudin pellentesque.</p>
+                    <p class="footer-text-tiny">Conectamos a força produtiva brasileira às maiores oportunidades de consumo globais com inteligência de mercado e segurança operacional.</p>
                     <div class="open-hours-item">
-                        <span class="material-symbols-outlined"
-                            style="color: var(--gold); font-size: 18px;">schedule</span>
+                        <span class="material-symbols-outlined icon-gold">schedule</span>
                         <div>
-                            <span class="open-hours-label">Open Hours</span>
-                            <span class="open-hours-val">Mon - Sat 08:00 to 19:00</span>
+                            <span class="open-hours-label">Atendimento</span>
+                            <span class="open-hours-val">Seg - Sex: 08h às 18h</span>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h4 class="footer-col-h4">
-                        <div class="footer-gold-line"></div> Our Company
+                        <div class="footer-gold-line"></div> Links Úteis
                     </h4>
                     <ul class="footer-links-list">
-                        <li><a href="#">About Company</a></li>
-                        <li><a href="#">Our Main Services</a></li>
-                        <li><a href="#">Our Project Gallery</a></li>
-                        <li><a href="#">News And Guides</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#why-choose-us">Quem Somos</a></li>
+                        <li><a href="#why-choose-us">Soluções</a></li>
+                        <li><a href="#engineering-process">Perfil do Importador</a></li>
+                        <li><a href="#contact-form">Contato</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-col-h4">
-                        <div class="footer-gold-line"></div> Peruvian Offices
+                        <div class="footer-gold-line"></div> Escritório Central
                     </h4>
-                    <ul class="contact-info-list font-bold">
+                    <ul class="contact-info-list">
+                        <!-- Catálogo completo de ícones disponível em: https://fonts.google.com/icons -->
                         <li class="contact-item">
-                            <span class="material-symbols-outlined" style="color: var(--gold);">location_on</span>
-                            Tupac Amaru 200 - Lima - Peru
+                            <span class="material-symbols-outlined icon-gold">location_on</span>
+                            Av. Brigadeiro Faria Lima, 1336 - Conj. 111 - 11º Andar - CEP.: 01451-001 - São Paulo - SP
                         </li>
                         <li class="contact-item">
-                            <span class="material-symbols-outlined" style="color: var(--gold);">call</span>
-                            Office: +515574657
+                            <span class="material-symbols-outlined icon-gold">mail</span>
+                            contato@hurrbrasil.com.br
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined icon-gold">call</span>
+                            (11) 96882-5811
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-col-h4">
-                        <div class="footer-gold-line"></div> Our Branches
+                        <div class="footer-gold-line"></div> Nossa Marca
                     </h4>
-                    <img alt="World Map" class="world-map-img" src="hurr_logo_letra_branca.png" />
+                    <a href="#hero"><img alt="HURR Logo" class="logo-footer" src="imagens/hurr_logo_letra_branca.png" /></a>
                 </div>
             </div>
 
             <div class="footer-bottom-bar">
-                <span>© 2024 Your Company - By Unitytemplates</span>
+                <span>© 2026 HURR BRASIL. Todos os direitos reservados.</span>
                 <div class="bottom-socials">
-                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">facebook</span>
-                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">movie</span>
-                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">camera_alt</span>
+                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">public</span>
+                    <span class="material-symbols-outlined icon-faded-hover" style="font-size: 14px;">mail</span>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div id="diagnosticPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button id="closeDiagnosticBtn" class="popup-close" aria-label="Fechar">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <span class="section-label-gold section-label-gold--centered">Diagnóstico</span>
+            <h2 class="popup-h2">Diagnóstico de Potencial do Seu Produto</h2>
+            <p class="popup-subtitle">Responda rapidamente e descubra o potencial do seu projeto no mercado internacional.</p>
+            <form class="diagnostic-form" id="diagnosticForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d33b9cdc-9642-4511-a384-b53adf3cf042" />
+                <input type="hidden" name="subject" value="Diagnóstico de Potencial - SITE HURR" />
+                <input type="hidden" name="from_name" value="HURR BRASIL - Diagnóstico de Potencial" />
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Qual seu nome e cargo na empresa?</label>
+                    <div class="diagnostic-row">
+                        <input type="text" name="nome" class="diagnostic-input diagnostic-input--half" placeholder="Nome" required />
+                        <input type="text" name="cargo" class="diagnostic-input diagnostic-input--half" placeholder="Cargo" required />
+                    </div>
+                </div>
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Email e telefone para contato</label>
+                    <div class="diagnostic-row">
+                        <input type="email" name="email" class="diagnostic-input diagnostic-input--half" placeholder="Email" />
+                        <input type="tel" name="telefone" class="diagnostic-input diagnostic-input--half" placeholder="Telefone" required />
+                    </div>
+                </div>
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Qual o nome e porte da sua empresa?</label>
+                    <div class="diagnostic-row">
+                        <input type="text" name="empresa" class="diagnostic-input diagnostic-input--half" placeholder="Nome da empresa" required />
+                        <select name="porte" class="diagnostic-input diagnostic-input--half" required>
+                            <option value="" disabled selected>Porte</option>
+                            <option value="ME">ME</option>
+                            <option value="EPP">EPP</option>
+                            <option value="Media">Médio</option>
+                            <option value="Grande">Grande</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Qual produto/serviço pretende importar?</label>
+                    <input type="text" name="produto" class="diagnostic-input" placeholder="Descreva brevemente o produto" required />
+                </div>
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Qual o volume estimado mensal ou valor do primeiro lote?</label>
+                    <select name="volume" class="diagnostic-input" required>
+                        <option value="" disabled selected>Selecione a faixa</option>
+                        <option value="ate_10k">Até US$ 10 mil</option>
+                        <option value="10k_50k">US$ 10 mil a US$ 50 mil</option>
+                        <option value="50k_200k">US$ 50 mil a US$ 200 mil</option>
+                        <option value="200k_1m">US$ 200 mil a US$ 1 milhão</option>
+                        <option value="acima_1m">Acima de US$ 1 milhão</option>
+                    </select>
+                </div>
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Já possui fornecedor internacional mapeado ou precisa de captação?</label>
+                    <select name="fornecedor" class="diagnostic-input" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sim">Sim, já tenho fornecedor</option>
+                        <option value="preciso_captacao">Não, preciso de captação</option>
+                        <option value="ambos">Tenho um, mas quero mais opções</option>
+                    </select>
+                </div>
+                <div class="diagnostic-field">
+                    <label class="diagnostic-label">Qual o principal mercado de interesse?</label>
+                    <select name="mercado" class="diagnostic-input" required>
+                        <option value="" disabled selected>Selecione o mercado</option>
+                        <option value="china">China</option>
+                        <option value="eua">EUA</option>
+                        <option value="europa">Europa</option>
+                        <option value="asia">Ásia</option>
+                        <option value="oriente_medio">Oriente Médio</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div id="diagnosticSuccess" class="form-success" style="display:none;">
+                    <span class="material-symbols-outlined" style="font-size: 2rem; color: var(--gold);">check_circle</span>
+                    <p>Diagnóstico recebido! Entraremos em contato em breve.</p>
+                </div>
+                <button type="submit" id="diagnosticSubmitBtn" class="btn-cta diagnostic-submit">ENVIAR <span class="material-symbols-outlined">send</span></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const close = document.getElementById('menuClose');
+        const menu = document.getElementById('mobileMenu');
+        const links = document.querySelectorAll('.mobile-nav-links a');
+
+        toggle.addEventListener('click', () => menu.classList.add('open'));
+        close.addEventListener('click', () => menu.classList.remove('open'));
+        links.forEach(l => l.addEventListener('click', () => menu.classList.remove('open')));
+
+        const form = document.querySelector('.contact-form-fields');
+        const success = document.getElementById('formSuccess');
+        const submitBtn = document.getElementById('formSubmitBtn');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+
+            const data = new FormData(form);
+            const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: data,
+            });
+
+            if (res.ok) {
+                form.querySelectorAll('input:not([type=hidden])').forEach(i => i.value = '');
+                success.style.display = 'block';
+                setTimeout(() => success.style.display = 'none', 6000);
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'ENVIAR <span class="material-symbols-outlined">send</span>';
+        });
+
+        const newsletterForm = document.getElementById('newsletterForm');
+        const newsletterSuccess = document.getElementById('newsletterSuccess');
+        const newsletterBtn = document.getElementById('newsletterSubmitBtn');
+
+        newsletterForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            newsletterBtn.disabled = true;
+
+            const data = new FormData(newsletterForm);
+            const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: data,
+            });
+
+            if (res.ok) {
+                newsletterForm.style.display = 'none';
+                newsletterSuccess.style.display = 'flex';
+            }
+
+            newsletterBtn.disabled = false;
+        });
+
+        const popup = document.getElementById('diagnosticPopup');
+        const openBtn = document.getElementById('openDiagnosticBtn');
+        const closeBtn = document.getElementById('closeDiagnosticBtn');
+
+        openBtn.addEventListener('click', () => popup.classList.add('open'));
+        closeBtn.addEventListener('click', () => popup.classList.remove('open'));
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) popup.classList.remove('open');
+        });
+
+        const diagForm = document.getElementById('diagnosticForm');
+        const diagSuccess = document.getElementById('diagnosticSuccess');
+        const diagBtn = document.getElementById('diagnosticSubmitBtn');
+
+        diagForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            diagBtn.disabled = true;
+            diagBtn.textContent = 'Enviando...';
+
+            const data = new FormData(diagForm);
+            const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: data,
+            });
+
+            if (res.ok) {
+                diagForm.querySelectorAll('input:not([type=hidden]), select').forEach(i => i.value = '');
+                diagSuccess.style.display = 'flex';
+                setTimeout(() => {
+                    diagSuccess.style.display = 'none';
+                    popup.classList.remove('open');
+                }, 4000);
+            }
+
+            diagBtn.disabled = false;
+            diagBtn.innerHTML = 'ENVIAR <span class="material-symbols-outlined">send</span>';
+        });
+    </script>
 </body>
 
 </html>
